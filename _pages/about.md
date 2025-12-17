@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: ECE PhD student at <a href=['#'](https://ucsd.edu/)>UCSD</a>.
+subtitle: ECE PhD student at <a href="https://ucsd.edu/">UCSD</a>
 profile:
   align: right
   image: prof_pic.jpg
