@@ -15,6 +15,8 @@ nav_order: 2
 
 <div class="publications">
 
+{% bibliography -f submitted --group_by type %}
+
 {% bibliography %}
 
 </div>
