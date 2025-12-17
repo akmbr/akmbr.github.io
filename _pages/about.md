@@ -4,13 +4,13 @@ title: about
 permalink: /
 subtitle: ECE PhD student at <a href="https://ucsd.edu/">UCSD</a>
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Jacobs Hall, Room 4516</p>
+    <p>9736 Engineers Ln.</p>
+    <p>La Jolla, CA 92092</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
