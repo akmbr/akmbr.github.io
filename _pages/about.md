@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hey! I am Anıl, and I am a second year Electrical and Computer Engineering PhD student at [University of California, San Diego](https://ucsd.edu/) [Jacobs School of Engineering](https://jacobsschool.ucsd.edu/), advised by [Rahul Parhi](https://sparsity.ucsd.edu/rahul/).
+Hey! I am Anıl, and I am a second year ECE PhD student at [University of California, San Diego](https://ucsd.edu/) [Jacobs School of Engineering](https://jacobsschool.ucsd.edu/), advised by [Rahul Parhi](https://sparsity.ucsd.edu/rahul/).
 
 I am exploring the mysteries of optimization dynamics in neural networks and transformer-based architectures. In particular, I am trying to understand why these models generalize well despite being highly overparameterized.
 
