@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: me
 permalink: /
 subtitle: ECE PhD student at <a href="https://ucsd.edu/">UCSD</a>
 profile:
