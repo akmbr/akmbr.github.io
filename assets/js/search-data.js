@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-papers",
           title: "Papers",
-          description: "A list of papers is also available on my [Google Scholar](https://scholar.google.com/citations?user=Rmq3l7gAAAAJ&amp;hl=en).",
+          description: "A list of papers is also available on my   Google Scholar.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
