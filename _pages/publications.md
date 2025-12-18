@@ -2,8 +2,7 @@
 layout: page
 permalink: /publications/
 title: Papers
-description: A list of papers is also available on my
-  <a href="https://scholar.google.com/citations?user=Rmq3l7gAAAAJ&hl=en">
+description: A list of papers is also available on my <a href='https://scholar.google.com/citations?user=Rmq3l7gAAAAJ&hl=en'><b>Google Scholar</b></a>.<br/><br/>
     Google Scholar
   </a>.
 nav: true
