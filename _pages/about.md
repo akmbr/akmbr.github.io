@@ -26,8 +26,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hey! I am Anıl, and I am a second year Electrical and Computer Engineering PhD student at [University of California, San Diego](https://ucsd.edu/) [Jacobs School of Engineering](https://jacobsschool.ucsd.edu/), advised by [Rahul Parhi](https://sparsity.ucsd.edu/rahul/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am exploring the mysteries of optimization dynamics in neural networks and transformer-based architectures. In particular, I am trying to understand why these models generalize well despite being highly overparameterized.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I received my bachelor's degree in Electrical and Electronics Engineering from [Bogazici University](https://bogazici.edu.tr/en_us), Istanbul, Turkey. My bachelor's thesis, titled [Blind Source Separation in Neuroscience](https://github.com/anlkamber3/polytopic-matrix-factorization-eeg), which was advised by [Alper Erdogan](https://aspc.ku.edu.tr/alper-t-erdogan) and [Burak Acar](https://vavlab.bogazici.edu.tr/people), won the Cenker Oden Senior Design Project Award, awarded for the best theoretical undergraduate research. Additionally, I derived the channel response of a SISO molecular communication via diffusion system in a 3-D half-space with an infinite reflecting surface, under the supervision of [Ali Emre Pusane](https://academics.boun.edu.tr/ali.pusane/).
+
+I am also interested in theoretical neuroscience.
