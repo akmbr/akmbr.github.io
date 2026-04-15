@@ -23,13 +23,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-notes",
-          title: "notes",
-          description: "My notes.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/notes/";
-          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -409,12 +402,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "notes-example-note-title",
-          title: 'Example Note Title',
-          description: "A short description of what this note covers — shown on the notes listing page.",
-          section: "Notes",handler: () => {
-              window.location.href = "/notes/example_note/";
-            },},{id: "projects-project-1",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
