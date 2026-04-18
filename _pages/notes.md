@@ -1,0 +1,162 @@
+---
+layout: page
+permalink: /notes/
+title: notes
+description: Handwritten notes from courses, papers, and self-study. Click a card to open the PDF.
+nav: true
+nav_order: 4
+
+# ---------------------------------------------------------------------------
+# How to add a new note:
+#   1. Drop the PDF into  assets/pdf/notes/<your-file>.pdf
+#   2. (Optional) Drop a cover image into assets/img/notes/<your-file>.jpg
+#        - a single snapshot of the first page works well
+#        - leave `thumbnail` blank to fall back to a generic notebook icon
+#   3. Add a new entry below. `category` groups notes into sections.
+# ---------------------------------------------------------------------------
+categories:
+  - name: mathematics
+    description: real analysis, functional analysis, measure theory, ...
+  - name: signal processing
+    description: sampling, wavelets, approximation theory, ...
+  - name: machine learning
+    description: deep learning theory, optimization, ...
+  - name: miscellaneous
+    description: paper reading notes and everything else
+
+notes:
+  - title: Example — Real Analysis, Chapter 1
+    category: mathematics
+    date: 2026-04-01
+    description: Metric spaces, compactness, and continuous functions.
+    pdf: example_pdf.pdf          # path relative to assets/pdf/notes/ (or full URL)
+    thumbnail:                    # path relative to assets/img/notes/  (optional)
+    pages: 12
+
+  - title: Example — Wavelets intro
+    category: signal processing
+    date: 2026-03-15
+    description: Haar basis, multiresolution analysis, first derivations.
+    pdf: example_pdf.pdf
+    thumbnail:
+    pages: 8
+---
+
+<style>
+  .notes-grid .card {
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .notes-grid .card:hover {
+    transform: translateY(-2px);
+  }
+  .notes-grid .note-cover {
+    aspect-ratio: 3 / 4;
+    background: var(--global-card-bg-color, #f6f6f6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--global-divider-color, #eee);
+    overflow: hidden;
+  }
+  .notes-grid .note-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .notes-grid .note-cover .fallback {
+    font-size: 3rem;
+    color: var(--global-text-color-light, #999);
+  }
+  .notes-grid .card-body { padding: 1rem; }
+  .notes-grid .note-meta {
+    font-size: 0.8rem;
+    color: var(--global-text-color-light, #888);
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+  }
+  .notes-category-header {
+    margin: 2rem 0 1rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid var(--global-divider-color, #eee);
+  }
+  .notes-category-header p { margin: 0; font-size: .9rem; color: var(--global-text-color-light, #888); }
+</style>
+
+<div class="notes-grid">
+{% assign sorted_notes = page.notes | sort: "date" | reverse %}
+
+{% for cat in page.categories %}
+  {% assign cat_notes = sorted_notes | where: "category", cat.name %}
+  {% if cat_notes.size > 0 %}
+    <div class="notes-category-header">
+      <h2 class="category text-lowercase">{{ cat.name }}</h2>
+      {% if cat.description %}<p>{{ cat.description }}</p>{% endif %}
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {% for note in cat_notes %}
+        {% if note.pdf contains '://' %}
+          {% assign pdf_url = note.pdf %}
+        {% else %}
+          {% assign pdf_url = note.pdf | prepend: '/assets/pdf/notes/' | relative_url %}
+        {% endif %}
+        <div class="col mb-3">
+          <a href="{{ pdf_url }}" target="_blank" rel="noopener">
+            <div class="card h-100 hoverable">
+              <div class="note-cover">
+                {% if note.thumbnail %}
+                  <img src="{{ note.thumbnail | prepend: '/assets/img/notes/' | relative_url }}" alt="{{ note.title }} cover">
+                {% else %}
+                  <span class="fallback"><i class="fa-regular fa-file-lines"></i></span>
+                {% endif %}
+              </div>
+              <div class="card-body">
+                <h3 class="card-title" style="font-size:1rem; margin-bottom:.35rem;">{{ note.title }}</h3>
+                {% if note.description %}
+                  <p class="card-text" style="font-size:.85rem; margin-bottom:0;">{{ note.description }}</p>
+                {% endif %}
+                <div class="note-meta">
+                  <span><i class="fa-regular fa-calendar"></i> {{ note.date | date: "%b %Y" }}</span>
+                  {% if note.pages %}<span>{{ note.pages }} pp.</span>{% endif %}
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+{% assign uncategorized = sorted_notes | where_exp: "n", "n.category == nil" %}
+{% if uncategorized.size > 0 %}
+  <div class="notes-category-header"><h2 class="category text-lowercase">other</h2></div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    {% for note in uncategorized %}
+      {% if note.pdf contains '://' %}{% assign pdf_url = note.pdf %}{% else %}{% assign pdf_url = note.pdf | prepend: '/assets/pdf/notes/' | relative_url %}{% endif %}
+      <div class="col mb-3">
+        <a href="{{ pdf_url }}" target="_blank" rel="noopener">
+          <div class="card h-100 hoverable">
+            <div class="note-cover">
+              {% if note.thumbnail %}
+                <img src="{{ note.thumbnail | prepend: '/assets/img/notes/' | relative_url }}" alt="{{ note.title }} cover">
+              {% else %}
+                <span class="fallback"><i class="fa-regular fa-file-lines"></i></span>
+              {% endif %}
+            </div>
+            <div class="card-body">
+              <h3 class="card-title" style="font-size:1rem; margin-bottom:.35rem;">{{ note.title }}</h3>
+              {% if note.description %}<p class="card-text" style="font-size:.85rem; margin-bottom:0;">{{ note.description }}</p>{% endif %}
+              <div class="note-meta">
+                <span><i class="fa-regular fa-calendar"></i> {{ note.date | date: "%b %Y" }}</span>
+                {% if note.pages %}<span>{{ note.pages }} pp.</span>{% endif %}
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+</div>
