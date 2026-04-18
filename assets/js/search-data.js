@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-notes",
+          title: "notes",
+          description: "Handwritten notes from courses, papers, and self-study. Click a card to open the PDF.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/notes/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "",
