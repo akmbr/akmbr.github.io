@@ -18,7 +18,7 @@ categories:
   - name: Optimization theory
     description: 
 notes:
-  - title: "Gradient Descent, Chebyshev Acceleration, and Kraylov Subspace Methods"
+  - title: "Gradient Descent, Chebyshev Acceleration, and Krylov Subspace Methods"
     category: Optimization theory
     date: 2026-04-01
     description: 'Various configurations of gradient descent for linear least squares problem and their convergence rates when $\nabla^2 \mathcal{L} \succ 0$. These notes are from the class DSC 243: Advanced Optimization taught by Dmitriy Drusvyatskiy at UCSD.'
