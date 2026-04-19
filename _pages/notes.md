@@ -21,7 +21,7 @@ notes:
   - title: Example — Real Analysis, Chapter 1
     category: Optimization theory
     date: 2026-04-01
-    description: These notes are from the class DSC 243: Advanced Optimization thought by Dmitriy Drusvyatskiy at UCSD.
+    description: "These notes are from the class DSC 243: Advanced Optimization thought by Dmitriy Drusvyatskiy at UCSD."
     pdf: linear_least_squares.pdf # path relative to assets/pdf/notes/ (or full URL)
     thumbnail:                    # path relative to assets/img/notes/  (optional)
     pages: 12
