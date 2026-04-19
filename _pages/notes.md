@@ -16,7 +16,7 @@ nav_order: 4
 # ---------------------------------------------------------------------------
 categories:
   - name: Optimization theory
-    description: Various gradient-based algorithms and their convergence rate for linear least squares problem when the Hessian is positive-definite.
+    description: Various configurations of gradient descent for linear least squares problem and their convergence rates when $\nabla^2 \mathcal{L} \succ 0$.
 notes:
   - title: Example — Real Analysis, Chapter 1
     category: Optimization theory
