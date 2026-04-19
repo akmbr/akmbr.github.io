@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /notes/
-title: notes
-description: Handwritten notes from courses, papers, and self-study. Click a card to open the PDF.
+title: Anıl's notes
+description: My handwritten notes.
 nav: true
 nav_order: 4
 
@@ -15,31 +15,16 @@ nav_order: 4
 #   3. Add a new entry below. `category` groups notes into sections.
 # ---------------------------------------------------------------------------
 categories:
-  - name: mathematics
-    description: real analysis, functional analysis, measure theory, ...
-  - name: signal processing
-    description: sampling, wavelets, approximation theory, ...
-  - name: machine learning
-    description: deep learning theory, optimization, ...
-  - name: miscellaneous
-    description: paper reading notes and everything else
-
+  - name: Optimization theory
+    description: Various gradient-based algorithms and their convergence rate for linear least squares problem when the Hessian is positive-definite.
 notes:
   - title: Example — Real Analysis, Chapter 1
-    category: mathematics
+    category: Optimization theory
     date: 2026-04-01
-    description: Metric spaces, compactness, and continuous functions.
-    pdf: example_pdf.pdf          # path relative to assets/pdf/notes/ (or full URL)
+    description: These notes are from the class DSC 243: Advanced Optimization thought by Dmitriy Drusvyatskiy at UCSD.
+    pdf: linear_least_squares.pdf # path relative to assets/pdf/notes/ (or full URL)
     thumbnail:                    # path relative to assets/img/notes/  (optional)
     pages: 12
-
-  - title: Example — Wavelets intro
-    category: signal processing
-    date: 2026-03-15
-    description: Haar basis, multiresolution analysis, first derivations.
-    pdf: example_pdf.pdf
-    thumbnail:
-    pages: 8
 ---
 
 <style>
