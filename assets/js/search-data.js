@@ -16,9 +16,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-notes",
-          title: "notes",
-          description: "Handwritten notes from courses, papers, and self-study. Click a card to open the PDF.",
+        },{id: "nav-anıl-39-s-notes",
+          title: "Anıl&#39;s notes",
+          description: "My handwritten notes.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/notes/";
