@@ -16,12 +16,12 @@ nav_order: 4
 # ---------------------------------------------------------------------------
 categories:
   - name: Optimization theory
-    description: Various configurations of gradient descent for linear least squares problem and their convergence rates when $\nabla^2 \mathcal{L} \succ 0$.
+    description: 
 notes:
   - title: Gradient Descent, Chebyshev Acceleration, and Kraylov Subspace Methods
     category: Optimization theory
     date: 2026-04-01
-    description: "These notes are from the class DSC 243: Advanced Optimization thought by Dmitriy Drusvyatskiy at UCSD."
+    description: "Various configurations of gradient descent for linear least squares problem and their convergence rates when $\nabla^2 \mathcal{L} \succ 0$. These notes are from the class DSC 243: Advanced Optimization taught by Dmitriy Drusvyatskiy at UCSD."
     pdf: linear_least_squares.pdf # path relative to assets/pdf/notes/ (or full URL)
     thumbnail: thumbnail_notes_lls.jpeg                    # path relative to assets/img/notes/  (optional)
     pages: 20
