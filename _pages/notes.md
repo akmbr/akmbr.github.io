@@ -25,6 +25,14 @@ notes:
     pdf: linear_least_squares.pdf # path relative to assets/pdf/notes/ (or full URL)
     thumbnail: thumbnail_notes_lls.jpeg                    # path relative to assets/img/notes/  (optional)
     pages: 20
+    
+  - title: "Arnoldi Iteration"
+    category: Optimization theory
+    date: 2026-04-19
+    description: "Arnoldi iteration method to compute maximum eigenvalue of the Hessian. The figure is taken from [this video](https://www.youtube.com/watch?v=2Y1ZDQw_2zw)."
+    pdf: Arnoldi_Iteration.pdf
+    thumbnail:
+    pages: 8
 ---
 
 <style>
@@ -53,6 +61,15 @@ notes:
     color: var(--global-text-color-light, #999);
   }
   .notes-grid .card-body { padding: 1rem; }
+  .notes-grid .card-title a.stretched-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .notes-grid .card-text p { margin-bottom: 0; }
+  .notes-grid .card-text a {
+    position: relative;
+    z-index: 2;
+  }
   .notes-grid .note-meta {
     font-size: 0.8rem;
     color: var(--global-text-color-light, #888);
@@ -87,27 +104,27 @@ notes:
           {% assign pdf_url = note.pdf | prepend: '/assets/pdf/notes/' | relative_url %}
         {% endif %}
         <div class="col mb-3">
-          <a href="{{ pdf_url }}" target="_blank" rel="noopener">
-            <div class="card h-100 hoverable">
-              <div class="note-cover">
-                {% if note.thumbnail %}
-                  <img src="{{ note.thumbnail | prepend: '/assets/img/notes/' | relative_url }}" alt="{{ note.title }} cover">
-                {% else %}
-                  <span class="fallback"><i class="fa-regular fa-file-lines"></i></span>
-                {% endif %}
-              </div>
-              <div class="card-body">
-                <h3 class="card-title" style="font-size:1rem; margin-bottom:.35rem;">{{ note.title }}</h3>
-                {% if note.description %}
-                  <p class="card-text" style="font-size:.85rem; margin-bottom:0;">{{ note.description }}</p>
-                {% endif %}
-                <div class="note-meta">
-                  <span><i class="fa-regular fa-calendar"></i> {{ note.date | date: "%b %Y" }}</span>
-                  {% if note.pages %}<span>{{ note.pages }} pp.</span>{% endif %}
-                </div>
+          <div class="card h-100 hoverable position-relative">
+            <div class="note-cover">
+              {% if note.thumbnail %}
+                <img src="{{ note.thumbnail | prepend: '/assets/img/notes/' | relative_url }}" alt="{{ note.title }} cover">
+              {% else %}
+                <span class="fallback"><i class="fa-regular fa-file-lines"></i></span>
+              {% endif %}
+            </div>
+            <div class="card-body">
+              <h3 class="card-title" style="font-size:1rem; margin-bottom:.35rem;">
+                <a href="{{ pdf_url }}" class="stretched-link" target="_blank" rel="noopener">{{ note.title }}</a>
+              </h3>
+              {% if note.description %}
+                <div class="card-text" style="font-size:.85rem; margin-bottom:0;">{{ note.description | markdownify }}</div>
+              {% endif %}
+              <div class="note-meta">
+                <span><i class="fa-regular fa-calendar"></i> {{ note.date | date: "%b %Y" }}</span>
+                {% if note.pages %}<span>{{ note.pages }} pp.</span>{% endif %}
               </div>
             </div>
-          </a>
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -121,25 +138,25 @@ notes:
     {% for note in uncategorized %}
       {% if note.pdf contains '://' %}{% assign pdf_url = note.pdf %}{% else %}{% assign pdf_url = note.pdf | prepend: '/assets/pdf/notes/' | relative_url %}{% endif %}
       <div class="col mb-3">
-        <a href="{{ pdf_url }}" target="_blank" rel="noopener">
-          <div class="card h-100 hoverable">
-            <div class="note-cover">
-              {% if note.thumbnail %}
-                <img src="{{ note.thumbnail | prepend: '/assets/img/notes/' | relative_url }}" alt="{{ note.title }} cover">
-              {% else %}
-                <span class="fallback"><i class="fa-regular fa-file-lines"></i></span>
-              {% endif %}
-            </div>
-            <div class="card-body">
-              <h3 class="card-title" style="font-size:1rem; margin-bottom:.35rem;">{{ note.title }}</h3>
-              {% if note.description %}<p class="card-text" style="font-size:.85rem; margin-bottom:0;">{{ note.description }}</p>{% endif %}
-              <div class="note-meta">
-                <span><i class="fa-regular fa-calendar"></i> {{ note.date | date: "%b %Y" }}</span>
-                {% if note.pages %}<span>{{ note.pages }} pp.</span>{% endif %}
-              </div>
+        <div class="card h-100 hoverable position-relative">
+          <div class="note-cover">
+            {% if note.thumbnail %}
+              <img src="{{ note.thumbnail | prepend: '/assets/img/notes/' | relative_url }}" alt="{{ note.title }} cover">
+            {% else %}
+              <span class="fallback"><i class="fa-regular fa-file-lines"></i></span>
+            {% endif %}
+          </div>
+          <div class="card-body">
+            <h3 class="card-title" style="font-size:1rem; margin-bottom:.35rem;">
+              <a href="{{ pdf_url }}" class="stretched-link" target="_blank" rel="noopener">{{ note.title }}</a>
+            </h3>
+            {% if note.description %}<div class="card-text" style="font-size:.85rem; margin-bottom:0;">{{ note.description | markdownify }}</div>{% endif %}
+            <div class="note-meta">
+              <span><i class="fa-regular fa-calendar"></i> {{ note.date | date: "%b %Y" }}</span>
+              {% if note.pages %}<span>{{ note.pages }} pp.</span>{% endif %}
             </div>
           </div>
-        </a>
+        </div>
       </div>
     {% endfor %}
   </div>
