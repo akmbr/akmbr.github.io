@@ -1,10 +1,14 @@
 metadata:
-  last_updated: '2026-02-16'
+  last_updated: '2026-04-29'
 papers:
   Rmq3l7gAAAAJ:9yKSN-GCB0IC:
     citations: 1
     title: 'Sharpness of Minima in Deep Matrix Factorization: Exact Expressions'
     year: '2025'
+  Rmq3l7gAAAAJ:W7OEmFMy1HYC:
+    citations: 0
+    title: 'On the Loss Landscape Geometry of Regularized Deep Matrix Factorization: Uniqueness and Sharpness'
+    year: '2026'
   Rmq3l7gAAAAJ:u-x6o8ySG0sC:
     citations: 1
     title: Half-Space Modeling With Reflecting Surface in Molecular Communication
