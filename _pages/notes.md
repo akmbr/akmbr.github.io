@@ -17,6 +17,7 @@ nav_order: 4
 categories:
   - name: Optimization theory
     description: 
+  - name: Statistical learning theory
 notes:
   - title: "Gradient Descent, Chebyshev Acceleration, and Krylov Subspace Methods"
     category: Optimization theory
@@ -33,6 +34,14 @@ notes:
     pdf: Arnoldi_Iteration.pdf
     thumbnail:
     pages: 8
+
+  - title: "Introduction"
+    category: Statistical learning theory
+    date: 2026-06-15
+    description: "Introduction to uniform convergence bounds."
+    pdf: Introduction to Statistical Learning Theory.pdf
+    thumbnail:
+    pages: 6
 ---
 
 <style>
