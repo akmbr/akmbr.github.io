@@ -34,14 +34,6 @@ notes:
     pdf: Arnoldi_Iteration.pdf
     thumbnail:
     pages: 8
-
-  - title: "Introduction"
-    category: Statistical learning theory
-    date: 2026-06-15
-    description: "Introduction to uniform convergence bounds."
-    pdf: Introduction to Statistical Learning Theory.pdf
-    thumbnail:
-    pages: 6
 ---
 
 <style>
