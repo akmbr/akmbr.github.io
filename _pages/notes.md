@@ -38,7 +38,7 @@ notes:
   - title: "Epsilon Covers"
     category: Statistical learning theory
     date: 2026-06-25
-    description: "Definitions of $\epsilon$-cover and covering number."
+    description: 'Definitions of $\epsilon$-cover and covering number.'
     pdf: epsilon-covers.pdf
     thumbnail: epsilon-cover-thumb-nail.png
     pages: 1
