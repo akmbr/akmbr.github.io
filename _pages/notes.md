@@ -30,7 +30,7 @@ notes:
   - title: "Arnoldi Iteration"
     category: Optimization theory
     date: 2026-04-19
-    description: "Arnoldi iteration method to compute maximum eigenvalue of the Hessian. The figure is taken from [this video](https://www.youtube.com/watch?v=2Y1ZDQw_2zw)."
+    description: "Arnoldi iteration method to compute maximum eigenvalue of the Hessian. I refer to [this video](https://www.youtube.com/watch?v=2Y1ZDQw_2zw) for the material."
     pdf: Arnoldi_Iteration.pdf
     thumbnail:
     pages: 8
