@@ -3,7 +3,7 @@ layout: page
 permalink: /notes/
 title: Anıl's notes
 description: My handwritten notes.
-nav: true
+nav: false
 nav_order: 4
 
 # ---------------------------------------------------------------------------
