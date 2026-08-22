@@ -599,6 +599,14 @@ footer.sticky-bottom {
   .footnote-ref {
     color: var(--global-theme-color);
     text-decoration: none;
+    // Shrink the marker, then reclaim the width it takes up so the gap between
+    // "Anıl" and "Kamber" stays a plain word space.
+    font-size: 0.4em;
+    margin-right: -0.4em;
+
+    sup {
+      top: -0.9em;
+    }
 
     &:hover {
       color: var(--global-hover-color);
