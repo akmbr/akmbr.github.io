@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-anıl-39-s-notes",
-          title: "Anıl&#39;s notes",
-          description: "My handwritten notes.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/notes/";
-          },
         },{id: "nav-cv",
           title: "CV",
           description: "",
