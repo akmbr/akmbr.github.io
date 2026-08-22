@@ -595,6 +595,27 @@ footer.sticky-bottom {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
+
+  .footnote-ref {
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+}
+
+.title-footnote {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+
+  .footnote-backlink {
+    text-decoration: none;
+  }
 }
 
 .post-list {

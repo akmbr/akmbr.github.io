@@ -4,7 +4,9 @@ layout: default
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
-      {% if site.title == 'blank' %}
+      {% if page.title_html %}
+        {{ page.title_html }}
+      {% elsif site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
@@ -75,6 +77,11 @@ layout: default
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
+    {% endif %}
+
+    <!-- Title footnote -->
+    {% if page.title_footnote %}
+      <div class="title-footnote">{{ page.title_footnote }}</div>
     {% endif %}
   </article>
 </div>

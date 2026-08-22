@@ -3,6 +3,12 @@ layout: about
 title: me
 permalink: /
 subtitle: ECE PhD student at <a href="https://ucsd.edu/">UCSD</a>
+title_html: >
+  Anıl<a href="#fn-name" id="fnref-name" class="footnote-ref"><sup>*</sup></a> Kamber
+title_footnote: >
+  <sup>*</sup> Pronounced <i>ah-NUHL</i> — the <i>ı</i> is a dotless i, a Turkish
+  vowel with no English equivalent.
+  <a href="#fnref-name" class="footnote-backlink" aria-label="Back to title">&#8617;</a>
 profile:
   align: right
   image: prof_pic.jpg
