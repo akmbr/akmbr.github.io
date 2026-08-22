@@ -26,10 +26,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hey! I am Anıl Kamber, and I am a second year ECE PhD student at [University of California, San Diego](https://ucsd.edu/) [Jacobs School of Engineering](https://jacobsschool.ucsd.edu/), advised by [Rahul Parhi](https://sparsity.ucsd.edu/rahul/).
+Hey! I am Anıl Kamber, and I am a third-year ECE PhD student at [University of California, San Diego](https://ucsd.edu/) [Jacobs School of Engineering](https://jacobsschool.ucsd.edu/). I am advised by [Rahul Parhi](https://sparsity.ucsd.edu/rahul/).
 
-I am exploring the mysteries of optimization dynamics in neural networks and transformer-based architectures. In particular, I am trying to understand why these models generalize well despite being highly overparameterized.
+I am broadly interested in optimization theory, deep learning theory, statistical learning, and deep learning systems. In particular, I am interested in designing parallelizable neural associative memory modules for transformers whose recall operations have subquadratic computational complexity at inference time. On the theoretical side, I am interested in the loss-landscape geometry of neural network training, as well as in the theory of learning dynamical systems.
 
-I received my bachelor's degree in Electrical and Electronics Engineering from [Bogazici University](https://bogazici.edu.tr/en_us), Istanbul, Turkey. My bachelor's thesis, titled [Blind Source Separation in Neuroscience](https://github.com/akmbr/polytopic-matrix-factorization-eeg), which was advised by [Alper Erdogan](https://aspc.ku.edu.tr/alper-t-erdogan) and [Burak Acar](https://vavlab.bogazici.edu.tr/people), won the [Cenker Oden Senior Design Project Award](http://www.sdp.ee.boun.edu.tr/awardcenker.asp), awarded for *the best theoretical undergraduate research*. Additionally, I derived the channel response of a SISO molecular communication system in a 3-D half-space with an infinite reflecting surface, under the supervision of [Ali Emre Pusane](https://academics.boun.edu.tr/ali.pusane/).
+I received my bachelor's degree in Electrical and Electronics Engineering from [Bogazici University](https://bogazici.edu.tr/en_us), Istanbul, Turkey. My bachelor's thesis, titled [Blind Source Separation in Neuroscience](https://github.com/akmbr/polytopic-matrix-factorization-eeg), which was advised by [Alper Erdogan](https://aspc.ku.edu.tr/alper-t-erdogan) and [Burak Acar](https://vavlab.bogazici.edu.tr/people), won the [Cenker Oden Senior Design Project Award](http://www.sdp.ee.boun.edu.tr/awardcenker.asp), awarded for *the best theoretical undergraduate research*.
 
 I am also interested in theoretical neuroscience.
