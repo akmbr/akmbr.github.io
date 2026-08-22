@@ -6,7 +6,7 @@ subtitle: ECE PhD student at <a href="https://ucsd.edu/">UCSD</a>
 title_html: >
   Anıl<a href="#fn-name" id="fnref-name" class="footnote-ref"><sup>*</sup></a> Kamber
 title_footnote: >
-  <sup>*</sup> In Turkish, <i>an</i> is both a noun and a verb root. As a verb root, it means “to remember” or “to commemorate”; as a noun, it means “a moment” or “an instant”—a smallest indivisible unit of time. <i>Anı</i> is a noun meaning “memory,” while <i>anıl</i> is the passive form of the verb, meaning “to be remembered” or “to be commemorated".
+  <sup>*</sup>In Turkish, the word <i>an</i> is both a noun and a verb. As a verb, it means “to remember” or “to commemorate”; as a noun, it means “a moment” or “an instant”—an infinitesimal amount of time. The noun <i>anı</i> means “memory”, and <i>anıl</i> is the passive form of the verb <i>an</i>.
   <a href="#fnref-name" class="footnote-backlink" aria-label="Back to title">&#8617;</a>
 profile:
   align: right
