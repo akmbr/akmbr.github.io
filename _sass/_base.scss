@@ -607,7 +607,7 @@ footer.sticky-bottom {
     sup {
       // `top` resolves against the sup's own (already shrunken) font, so it takes
       // a large multiple to reach the cap height of the surrounding title.
-      top: -1.6em;
+      top: -1.9em;
     }
 
     &:hover {
